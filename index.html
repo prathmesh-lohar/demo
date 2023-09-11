@@ -16,57 +16,131 @@
 </head>
 
 <body>
+    <!-- header -->
+    <div class="top-head">
+        
+        
+    </div>
     <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Container wrapper -->
-            <div class="container">
-                <!-- Navbar brand -->
-                <a class="navbar-brand me-2" href="https://mdbgo.com/">
-                    <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="16"
-                        alt="MDB Logo" loading="lazy" style="margin-top: -1px" />
+        <!-- Image and text -->
+        <nav class="navbar navbar-expand-lg  navbar-light bg-light p-3">
+            <div class="container-fluid mx-3">
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="me-2" height="20"
+                        alt="MDB Logo" loading="lazy" />
+                    <small>Nameofwebsite</small>
                 </a>
 
-                <!-- Toggle button -->
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
 
                 <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
                     <!-- Left links -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Dashboard</a>
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">All Profiles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Plans</a>
+                        </li> <li class="nav-item">
+                            <a class="nav-link" href="#">register</a>
+                        </li> <li class="nav-item">
+                            <a class="nav-link" href="#">LogIn</a>
                         </li>
                     </ul>
                     <!-- Left links -->
-
-                    <div class="d-flex align-items-center">
-                        <button type="button" class="btn btn-link px-3 me-2">
-                            Login
-                        </button>
-                        <button type="button" class="btn btn-primary me-3">
-                            Sign up for free
-                        </button>
-                        <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
-                                class="fab fa-github"></i></a>
-                    </div>
                 </div>
                 <!-- Collapsible wrapper -->
+
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="#">
+                        <i class="fas fa-message    "></i>
+                    </a>
+
+                    <!-- Notifications -->
+                    <div class="dropdown">
+                        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">Some news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Another news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Right elements -->
             </div>
             <!-- Container wrapper -->
+
+            </div>
+
         </nav>
-        <!-- Navbar -->
     </header>
-    <div class="filter-mob text-center" data-mdb-toggle="modal" data-mdb-target="#exampleModal"><span>Profile Fileter <span class="fa fa-filter"></span></div>
+    <!-- /header -->
+
+
+    <div class="filter-mob text-center" data-mdb-toggle="modal" data-mdb-target="#exampleModal"><span>Profile Fileter
+            <span class="fa fa-filter"></span></div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-               
+
                 <div class="filter my-5">
 
                     <form>
@@ -107,48 +181,76 @@
             </div>
             <div class="col-md-9 profileare">
                 <div class="upper py-5">
-                    <div class="d-inline h5">Showing Profiles</div>
+                    <div class="d-inline h5">Showing <span style="font-weight: bold; font-family: roboto;">32</span>
+                        Profiles</div>
 
-                    <div class="d-inline h5 float-end">
-                        <span class="fa fa-bars "></span>
+                    <div class="end">
+                        <div class="d-inline h5 float-end">
+                            <div class="d-inline h5">short by :</div>
+                            <select>
+                                <option>Most Relative</option>
+                            </select>
+
+                            <span class="fa fa-th "></span>
+                            <pan class="fa fa-bars "></pan>
+                        </div>
                     </div>
                     <hr class="hr my-4" />
                 </div>
 
                 <div class="cardarea">
-                    <div class="card mb-3" ">
-                <div class=" row g-0">
-                        <div class="col-md-4">
-                            <img src="images/profile.jpg" alt="Trendy Pants and Shoes"
-                                class="img-fluid rounded-start profile-img" />
-                                
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Suhit Tupe</h5>
-                                <p class="card-text">
-                                
-                                    <span class="fa fa-certificate"></span><span> BMA Finance</span>
-                                    &nbsp;
-                                    &nbsp;
-                                    &nbsp;
-                                    &nbsp;
-                                    <span class="fa fa-briefcase "></span><span>  Finance Analyst [ Wipro pvt. lmt.]</span><br>
-                                    <span class="fa fa-calendar"></span><span> Male, 26 Years</span>
-                                    &nbsp;
-                                    &nbsp;
-                                    &nbsp;
-                                    
-                                    <span class="fa fa-long-arrow-up "></span><span>  5.6"</span>
-                                </p>
-                                <hr class="hr"/>
-                                <p class="card-text">
-                                    <span class="tags">chat now</span>
-                                    <span class="tags">watsapp</span>
-                                    <span class="tags">send Interest</span>
-                                    <span class="tags">more..</span>
+                    <div class="card mb-3">
+                        <div class=" row g-0">
+                            <div class="col-md-4">
+                                <img src="images/profile.jpg" alt="Trendy Pants and Shoes"
+                                    class="img-fluid rounded-start profile-img" />
 
-                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+
+                                    <div class="like">
+                                        <span class="fa fa-thumbs-o-up"></span>
+
+                                    </div>
+                                    <h5 class="card-title">Suhit Tupe</h5>
+                                    <p class="card-text">
+
+                                        <span class="fa fa-certificate"></span><span> BMA Finance</span>
+                                        &nbsp;
+                                        &nbsp;
+                                        &nbsp;
+                                        &nbsp;
+                                        <span class="fa fa-briefcase "></span><span> Finance Analyst [ Wipro pvt.
+                                            lmt.]</span><br>
+                                        <span class="fa fa-calendar"></span><span> Male, 26 Years</span>
+                                        &nbsp;
+                                        &nbsp;
+                                        &nbsp;
+
+                                        <span class="fa fa-long-arrow-up "></span><span> 5.6"</span>
+                                        <br>
+                                        <span class="fa fa-heart"></span><span> Unmarried</span>
+                                        &nbsp;
+                                        &nbsp;
+                                        &nbsp;
+                                        &nbsp;
+                                        &nbsp;
+                                        &nbsp;
+                                        <span class="fa fa-filter "></span><span> Matching 75%</span><br>
+                                        <span class="fa fa-location-arrow"> </span><span> Parali</span>
+
+
+                                    </p>
+                                    <hr class="hr" />
+                                    <p class="card-text">
+                                        <span class="tags">chat now</span>
+                                        <span class="tags">watsapp</span>
+                                        <span class="tags">send Interest</span>
+                                        <span class="tags">more..</span>
+
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,18 +258,17 @@
             </div>
         </div>
     </div>
-    </div>
 
 
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Profile Filer</h5>
-          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body"> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile Filer</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
                     <form>
                         <label class="form-label"><span class="fa fa-search"></span> I'm looking for</label>
@@ -204,13 +305,13 @@
                     </form>
 
                 </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 </body>

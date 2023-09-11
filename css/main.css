@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&family=Poppins&display=swap');
 
 body {
     background-color: #fdfbf6;
@@ -6,16 +7,22 @@ body {
 
 .filter {
     display: block;
-    width: 100%;
+    /* width: 100%;
     background-color: white;
     border-radius: 10px;
     border: 1px solid #ebddaa;
     padding: 30px 25px;
+    margin: 60px 0px 70px; */
+
+    background: rgb(255 255 255);
+    border-radius: 10px;
+    padding: 30px 25px;
     margin: 60px 0px 70px;
+    border: 1px solid #ebddaa;
 }
 
-@media screen and (max-width: 767px){
-    .filter{
+@media screen and (max-width: 767px) {
+    .filter {
         display: none;
     }
 }
@@ -43,7 +50,7 @@ body {
 }
 
 .cardarea {
-    margin-top: -30px;
+    margin-top: -50px;
 }
 
 .cardarea .card-title {
@@ -54,29 +61,66 @@ body {
 
 .card {
     padding: 8px;
+    margin: 10px 0px 10px 15px;
+}
+
+.card .fa {
+    color: #601e4f;
+}
+
+.card-body .card-title:hover {
+    color: #601e4f;
 }
 
 .card-body {
     padding-top: 7px;
 }
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 767px) {
     .card-body {
         padding-top: 10px;
-    }  
-}
-.card img{
-    position: relative;
-  text-align: center;
+    }
 }
 
-.card .tags{
-    border-radius: 25px;
+.card img {
+    /* position: relative;
+  text-align: center; */
+    width: 100%;
+    float: left;
+    object-fit: cover;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.card .tags {
+    /* border-radius: 25px;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     padding: 8px;
-    font-size: small;
-    
+    font-size: small; */
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 231, 236);
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 30px;
+    float: left;
+    margin: 0 8px 8px 0;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+.card .tags:hover {
+    background-color: green;
+    color: white;
+}
+
+.card-body span {
+    font-weight: 500
 }
 
 .profile-img {
@@ -105,12 +149,14 @@ body {
 
 .filter select {
 
-    border-style: solid;
+    /* border-style: solid; */
     padding: 12px;
-    border-color: rgb(96, 30, 79);
+    /* border-color: rgb(96, 30, 79); */
     color: rgb(96, 30, 79);
     font-size: 14px;
     font-weight: 600;
+    border: 1px solid rgb(96, 30, 79);
+
 }
 
 .filter option {
@@ -154,15 +200,106 @@ body {
     background-color: rgba(255, 71, 209, 0.106);
 
 }
-.filter-mob{
+
+.filter-mob {
     display: none;
     background-color: rgba(255, 192, 203, 0.685);
     padding: 5px;
     color: blueviolet;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif   ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-@media screen and (max-width: 767px){
-    .filter-mob{
+
+@media screen and (max-width: 767px) {
+    .filter-mob {
         display: block;
     }
+}
+
+.upper ul {
+    float: right;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+
+.col-md-8 .card-title {
+    color: rgb(33, 37, 41);
+    font-weight: 600;
+
+    font-size: 26px;
+}
+
+.like .fa {
+    float: right;
+    color: blue;
+}
+
+.profileare select {
+    border: 1px solid rgb(96, 30, 79);
+    height: 45px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.upper .fa-th {
+    border: 1px solid #601e4f;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.upper .float-end {
+
+    margin-top: -37px;
+
+}
+
+.end {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .end {
+
+        display: none;
+
+    }
+}
+
+.navbar .nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #66451c;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+}
+.navbar .nav-link:hover{
+    color: rgb(108, 88, 224);
+}
+.navbar .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.navbar-collapse {
+    margin-left: 85px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        margin-left: 9px;
+    }
+}
+
+.top-head{
+    background: linear-gradient(to right, rgb(118, 69, 8), rgb(64, 52, 6));
+    width: 100%;
+    height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .top-head{display: none;}
 }
