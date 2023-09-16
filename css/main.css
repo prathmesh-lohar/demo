@@ -293,6 +293,9 @@ body {
     .navbar-collapse {
         margin-left: 9px;
     }
+    .navbar-collapse {
+        margin-left: -25px;
+    }
 }
 
 .top-head{
@@ -349,6 +352,9 @@ body {
     .navbar .fa fa-bell{
        display: none;
     }
+    .navbar ul{
+        margin-left: 0px;
+    }
 }
 .head1mob{
     display: none;
@@ -360,3 +366,6 @@ body {
    }
    
 }
+/* .ele-right{
+    margin: auto;
+} */
