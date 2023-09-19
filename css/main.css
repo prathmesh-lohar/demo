@@ -369,3 +369,19 @@ body {
 /* .ele-right{
     margin: auto;
 } */
+
+.carousel-item{
+    cursor: -webkit-zoom-in;
+}
+.bio h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #5d0874;
+
+}
+.bio span{
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px;
+    border-radius: 4px;
+}
