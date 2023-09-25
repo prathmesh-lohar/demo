@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@300&family=Playfair+Display&family=Poppins&display=swap');
 body {
     background-color: #fdfbf6;
 }
@@ -273,14 +273,16 @@ body {
     cursor: pointer;
     font-weight: 700;
 }
-.navbar .nav-link:hover{
+
+.navbar .nav-link:hover {
     color: rgb(108, 88, 224);
 }
+
 .navbar .navbar-brand {
     font-family: 'Poppins', sans-serif;
 
     cursor: pointer;
-    font-weight: 700;   
+    font-weight: 700;
     margin-left: -8px;
 
 }
@@ -293,144 +295,169 @@ body {
     .navbar-collapse {
         margin-left: 9px;
     }
+
     .navbar-collapse {
         margin-left: -25px;
     }
 }
 
-.top-head{
+.top-head {
     background: linear-gradient(to right, rgb(96, 8, 118), rgba(17, 6, 64, 0.979));
     width: 100%;
     height: 30px;
 }
 
 @media screen and (max-width: 767px) {
-    .top-head{display: none;}
+    .top-head {
+        display: none;
+    }
 }
 
-.navbar{
+.navbar {
     padding: 20px;
 }
-.navbar .container-fluid{
+
+.navbar .container-fluid {
     margin: 0px 48px 0px 39px;
 }
+
 @media screen and (max-width: 767px) {
-    .navbar{
+    .navbar {
         padding: 10px;
     }
-    .navbar .container-fluid{
+
+    .navbar .container-fluid {
         margin: 0px 0px 0px 0px;
     }
 }
-.navbar-brand{
-   margin-right: 0px;
-   
+
+.navbar-brand {
+    margin-right: 0px;
+
 }
+
 @media screen and (max-width: 380px) {
-    .navbar .fa-message    {
-        display: none;
-    } .navbar .fa-bell  {
+    .navbar .fa-message {
         display: none;
     }
-    .navbar .badge-notification  {
+
+    .navbar .fa-bell {
+        display: none;
+    }
+
+    .navbar .badge-notification {
         display: none;
     }
 }
 
-.navbar ul{
+.navbar ul {
     margin-left: 38px;
 }
-.navbar .rounded-circle{
+
+.navbar .rounded-circle {
     height: 38px;
 }
+
 @media screen and (max-width: 764px) {
-    .navbar .rounded-circle{
+    .navbar .rounded-circle {
         height: 30px;
     }
 }
+
 @media screen and (max-width: 393px) {
-    .navbar .fa fa-bell{
-       display: none;
+    .navbar .fa fa-bell {
+        display: none;
     }
-    .navbar ul{
+
+    .navbar ul {
         margin-left: 0px;
     }
 }
-.head1mob{
+
+.head1mob {
     display: none;
 }
 
 @media screen and (max-width: 767px) {
-   .head1mob{
-    display: block;
-   }
-   
+    .head1mob {
+        display: block;
+    }
+
 }
+
 /* .ele-right{
     margin: auto;
 } */
 
-.carousel-item{
+.carousel-item {
     cursor: -webkit-zoom-in;
 }
-.bio h1{
+
+.bio h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #5d0874;
 
 }
-.bio span{
+
+.bio span {
     font-size: 13px;
     font-weight: 400;
     padding: 5px;
     border-radius: 4px;
 }
-.imenu{
+
+.imenu {
     width: 100%;
-   
+
 }
 
 
 
 /* slider css */
 
-    .scrol_tab{
-        font-family: "Roboto",sans-serif;
-        background-color: rgba(255, 255, 255, 0.486);
-        /* background-color: #00000012; */
-        width: 100%;
-        margin: 0px auto;
-        border-radius: 4px;
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        cursor: pointer;
-    }
-    .fafa {
-        color: white;
-        display: block;
-    }
-    .scrol_tab ul{
-        display: flex;
-        gap: 16px;
-        padding: 12px 24px;
-        margin: 0;
-        list-style-type: none;
-        overflow-x: scroll;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        scroll-behavior: smooth;
-        margin-left: -15px;
-    }
-    .scrol_tab a.activetab{
-        color: white;
+.scrol_tab {
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(255, 255, 255, 0.486);
+    /* background-color: #00000012; */
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.fafa {
+    color: white;
+    display: block;
+}
+
+.scrol_tab ul {
+    display: flex;
+    gap: 16px;
+    padding: 12px 24px;
+    margin: 0;
+    list-style-type: none;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    margin-left: -15px;
+}
+
+.scrol_tab a.activetab {
+    color: white;
     background-color: #000000ab;
-    }
-    .scrol_tab ul::-webkit-scrollbar{
-        display: none;
-    }
-    .scrol_tab a {
-        color: black;
+}
+
+.scrol_tab ul::-webkit-scrollbar {
+    display: none;
+}
+
+.scrol_tab a {
+    color: black;
     text-decoration: none;
     background-color: #fff;
     padding: 4px 24px;
@@ -440,31 +467,36 @@ body {
     white-space: nowrap;
     border-style: solid;
     border-width: 1px;
-    }
-    .scrol_tab .right-arrow , .scrol_tab .left-arrow{
-  
-        top:0;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-    }
-    .scrol_tab .right-arrow{
-        right: 0;
-        background: linear-gradient(to left,#cacacaad 60%, transparent);
+}
 
-    justify-content: flex-end;
-    color: black;   
+.scrol_tab .right-arrow,
+.scrol_tab .left-arrow {
 
-    }
-    .scrol_tab .left-arrow{
-        right: 0;
-    background: linear-gradient(to right,#cacacaad 60%, transparent);
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.scrol_tab .right-arrow {
+    right: 0;
+    background: linear-gradient(to left, #cacacaad 60%, transparent);
+
     justify-content: flex-end;
     color: black;
-    }
-    .fafa: hover {
-        background-color: #333;
-    }
+
+}
+
+.scrol_tab .left-arrow {
+    right: 0;
+    background: linear-gradient(to right, #cacacaad 60%, transparent);
+    justify-content: flex-end;
+    color: black;
+}
+
+.fafa: hover {
+    background-color: #333;
+}
 
 
 
@@ -472,64 +504,191 @@ body {
 
 /* slider css */
 
-.mainx{
+.mainx {
     margin-left: 34px;
 
 }
 
 @media screen and (max-width: 990px) {
-    .mainx{
+    .mainx {
         margin-left: 0px;
-    
+
     }
-    
-    
- }
- .bigbtns{
+
+
+}
+
+.bigbtns {
     width: 100%;
     padding: 0;
     margin: 0;
- }
- .bigbtns .btn{
-    width: 49%;
-    
-    border-radius: 0px;
- }
- .bigbtns .btn-danger{
-    float: right;
- }
+}
 
- .infohead{
+.bigbtns .btn {
+    width: 49%;
+
+    border-radius: 0px;
+}
+
+.bigbtns .btn-danger {
+    float: right;
+}
+
+.infohead {
     width: 100%;
     background-color: #5d0874;
     color: white;
-    font-family:'Playfair Display', serif ;
+    font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 18px;
     padding-left: 10px;
- }
+}
 
- .infohead .fa-chevron-down{
+.infohead .fa-chevron-down {
     padding: 8px;
     cursor: pointer;
 
- }
- .infodata .points{
-    margin-left: 8px;
- }
+}
 
- .infodata .points span{
+.infodata .points {
+    margin-left: 8px;
+}
+
+.infodata .points span {
     font-weight: 700;
     font-size: 18px;
- }
- .infodata p {
+}
+
+.infodata p {
     text-align: justify;
- }
- .infodata b{
+}
+
+.infodata b {
     font-weight: bolder;
     font-size: 22px;
- }
- .bio{
+}
+
+.bio {
     margin-left: 22px;
     padding-right: 68px;
- }
+}
+
+.mianbox {
+    /* background-image:  */
+    background-image: linear-gradient(to bottom, rgba(117, 19, 93, 0.589),rgb(0, 0, 0)), url("/images/couple.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* homepage */
+.inner {
+    text-align: center;
+    padding: 40px;
+}
+.inner .hashtag{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    line-height: 60px;
+
+}
+.inner .sec{
+    font-size: 56px;
+    color: #a5e6fa;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 60px;
+
+}
+.inner .red{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    line-height: 60px;
+
+
+}
+.inner .white{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff; 
+    font-family: 'Playfair Display', serif;
+    margin-left: 8px;
+    color: #fff;
+    line-height: 60px;
+  
+
+}
+.inner small{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    line-height: 60px;
+
+}
+
+.inner .search-form{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.654);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+.inner .search-form select{
+    border: 1px solid rgb(96, 30, 79);
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: Poppins, sans-serif;
+    color: #66451c;
+    width: 100%;
+}
+
+.inner .search-form .btn{
+    
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    width: 100%;
+    background-color: #607d8b;
+}
+.headiing{
+    text-align: center;
+
+}
+
+.headiing .subbrand{
+    font-size: 30px;
+    font-weight: 700;
+
+    color: rgb(196, 140, 70);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.headiing h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #66451c;
+    font-size: 50px;
+}
+.headiing .num{
+    font-size: 70px;
+
+}
