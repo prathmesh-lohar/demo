@@ -306,6 +306,10 @@ body {
     width: 100%;
     height: 30px;
 }
+footer{
+    background: linear-gradient(to right, rgb(96, 8, 118), rgba(17, 6, 64, 0.979));
+
+}
 
 @media screen and (max-width: 767px) {
     .top-head {
@@ -700,11 +704,12 @@ body {
   
    
     transition: all .4s cubic-bezier(0.4, 0.0, 0.2, 1);;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
  
     color: white;
     width: 100%;
     height: 300px;
+
    
 }
 
@@ -719,7 +724,8 @@ body {
   position: absolute;
   z-index: -1;
   width: auto;
-  height: 300px;
+  height: 100%;
+  
 }
 
 .profile .card-title {
@@ -732,7 +738,7 @@ body {
 .profile .card-block {
   text-align: center;
   padding: 16px;
-  margin-top: 50%;
+  margin-top: 25%;
 }
 
 .profile .card-bg {
@@ -742,6 +748,8 @@ body {
   height: 100%;
   background-color: #000;
   transition: .4s ease;
+  border-radius: 10px;
+  
 }
 
 .profile .card-text {
@@ -760,10 +768,14 @@ body {
 
 .profile .card:hover .card-bg {
 	opacity: .8;
+    border: 1px solid #333;
+
+
 }
 
 .profile .card:hover ::after {
   opacity: 0;
+  
 }
 /*  */
 
@@ -799,5 +811,47 @@ padding: 5px;
 }
 .mancon .cardarea .card img{
     width: 100%;
-    max-height: 300px;
+    max-height: 100%;
+    border-radius: 0px;
+}
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Montserrat:wght@300&family=Playfair+Display&family=Poppins&display=swap');
+
+
+.about img{
+    width: 100%;
+    border-radius: 20px;
+}
+.about .body h2{
+    font-size: 60px;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #66451c;
+
+}
+.about .body h3{
+    font-size: 45px;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #e5026b;
+
+}
+.about .body p{
+    
+    font-family: Poppins, sans-serif;
+    color: #66451c;
+    font-size: 18px;
+    text-align: justify;
+
+    
+}
+.about .body .ico{
+    list-style: none;
+    font-size: 20px;   
+    font-weight: 600;
+    text-align: justify;
+}
+.about .body .ico .fa{
+    background: black;
+    padding: 15px;
+    color: #fff;
+    border-radius: 30%;
 }
